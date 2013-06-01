@@ -1,0 +1,24 @@
+Name:                alphaheavy-conduit
+Version:             0.1
+License:             BSD3
+Build-type:          Simple
+Cabal-version:       >= 1.10
+
+Library
+  Default-Language:  Haskell2010
+  HS-Source-Dirs:    src
+  Exposed-modules:   AlphaHeavy.Conduit
+
+  Build-depends:     base,
+                     conduit < 1.0,
+                     bytestring,
+                     -- conduit,
+                     containers,
+                     mtl >= 2.0,
+                     resourcet,
+                     stm >= 2.4,
+                     -- text,
+                     void
+
+  GHC-Options:       -Wall -Werror
+  GHC-Prof-Options:  -auto-all
